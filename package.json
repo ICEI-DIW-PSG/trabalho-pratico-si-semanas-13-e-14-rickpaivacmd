@@ -1,0 +1,21 @@
+{
+  "name": "template-diw-20251-semana-11",
+  "version": "1.0.0",
+  "description": "Back end com JSONServer. Projeto da disciplina de Desenvolvimento de Interfaces Web de vários cursos da PUC Minas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server --watch db/db.json --port 3000 --static ./public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/Users/henriquepaiva/trabalho-pratico-si-semanas-11-e-12-rickpaivacmd"
+  },
+  "type": "commonjs"
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes da Corrida — F1 Insights</title>
+<link rel="stylesheet" href="./assets/css/styles.css">
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container head-wrap">
+    <h1 class="logo">F1 <span>Insights</span></h1>
+    <nav class="site-nav">
+      <ul class="nav-list">
+        <li><a href="./index.html">Voltar</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container section">
+  <header class="section-head">
+    <h3>Detalhes da Corrida</h3>
+  </header>
+
+  <article id="detalhes-corrida"></article>
+</main>
+
+<script>
+const API = "http://localhost:3000/corridas";
+
+function getParam(name) {
+  const url = new URL(window.location.href);
+  return url.searchParams.get(name);
+}
+
+async function carregarDetalhes() {
+  const id = getParam("id");
+  const alvo = document.getElementById("detalhes-corrida");
+
+  if (!id) {
+    alvo.innerHTML = "<p>Corrida não encontrada.</p>";
+    return;
+  }
+
+  try {
+    const resposta = await fetch(`${API}/${id}`);
+    const c = await resposta.json();
+
+    alvo.innerHTML = `
+      <div class="detalhe-item-wrap">
+        <img class="thumb-detalhe" src="${c.imagem}" alt="${c.nome}">
+        <div class="detalhe-info">
+          <h2>${c.nome}</h2>
+          <p><strong>Data:</strong> ${c.data}</p>
+          <p><strong>Circuito:</strong> ${c.circuito}</p>
+          <p><strong>País:</strong> ${c.pais}</p>
+          <p class="detalhe-conteudo">${c.descricao}</p>
+
+          <a href="./editar_corrida.html?id=${c.id}" class="btn ghost btn-small" style="margin-top: 16px;">Editar</a>
+        </div>
+      </div>
+    `;
+
+  } catch (erro) {
+    alvo.innerHTML = "<p>Erro ao carregar detalhes.</p>";
+    console.error(erro);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", carregarDetalhes);
+</script>
+
+</body>
+</html>

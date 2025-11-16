@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>F1 Insights — Cobertura da temporada</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+
+  <meta name="description" content="F1 Insights: notícias, análises, calendário e destaques da Fórmula 1.">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container head-wrap">
+      <h1 class="logo">F1 <span>Insights</span></h1>
+      <nav class="site-nav" aria-label="principal">
+        <ul class="nav-list">
+          <li><a href="#" aria-current="page">Home</a></li>
+          <li><a href="#destaques">Notícias</a></li>
+          <li><a href="#analises">Análises</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container section carousel-section">
+      <header class="section-head">
+        <h3>Destaques do Dia</h3>
+      </header>
+      <div id="carousel" class="carousel">
+        <div id="carousel-inner" class="carousel-inner">
+          </div>
+        <button class="carousel-control prev" aria-label="Anterior">‹</button>
+        <button class="carousel-control next" aria-label="Próxima">›</button>
+      </div>
+    </section>
+
+    <section id="destaques" class="container section">
+      <header class="section-head">
+        <h3>Últimas Notícias</h3>
+      </header>
+      <ul id="categorias" class="category-filter">
+      </ul>
+      <div id="cards" class="grid-3"></div>
+    </section>
+    
+<section class="container section">
+  <header class="section-head">
+    <h3>Próximas Corridas</h3>
+
+    <div style="display:flex; gap:10px;">
+      <a class="btn ghost btn-small" href="./cadastro_corridas.html">Cadastrar corrida</a>
+      <a class="btn ghost btn-small" href="./calendario.html">Ver Calendário</a>
+    </div>
+
+  </header>
+
+  <div id="lista-corridas" class="grid-3"></div>
+</section>
+
+
+    <section id="analises" class="container section">
+      <header class="section-head">
+        <h3>Análises & Leituras Recomendadas</h3>
+      </header>
+
+      <div class="two-col">
+        <article class="card read">
+          <h4>Verstappen admite culpa em confronto com Russell na Espanha</h4>
+          <p>Tetracampeão ficou extremamente frustrado durante a corrida, mas depois entendeu a gravidade de sua manobra</p>
+          <a class="link" href="https://www.formula1.com/en/racing.html" target="_blank" rel="noopener">Entenda o caso!</a>
+        </article>
+
+        <article class="card read">
+          <h4>Ayrton Senna</h4>
+          <p>Ayrton Senna (1960-1994) foi um piloto brasileiro de Fórmula 1. Ídolo do automobilismo, conquistou três títulos mundiais e marcou a história da categoria.</p>
+          <a class="link" href="https://www.ebiografia.com/ayrton_senna/" target="_blank" rel="noopener">Conheça o homem!</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre" class="container section about-section">
+      <header class="section-head">
+        <h3>Sobre o Autor</h3>
+      </header>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Olá! Meu nome é Henrique Paiva, e eu sou o responsável pela criação e manutenção do F1 Insights.</p>
+          <p>Este projeto nasceu da paixão pela velocidade, estratégia e tecnologia que definem a Fórmula 1. O objetivo é fornecer uma cobertura concisa e organizada dos principais acontecimentos do paddock, das corridas e dos bastidores, utilizando tecnologias que eu estou aprendendo para gerenciamento dinâmico do conteúdo.</p>
+          <p>Agradeço por acompanhar e espero que o conteúdo seja útil para você!</p>
+        </div>
+        <figure class="about-art" aria-hidden="true"></figure>
+      </div>
+    </section>
+
+    <section id="contato" class="container section">
+      <h3>Receba os insights por e-mail</h3>
+      <form class="form-news" action="#" method="post">
+        <div class="field">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" placeholder="Seu nome" required>
+        </div>
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" placeholder="voce@email.com" required>
+        </div>
+        <div class="actions">
+          <button type="submit">Assinar</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot-wrap">
+      <small>© 2025 — F1 Insights. Desenvolvido por [Seu Nome Aqui]</small>
+      <ul class="social">
+        <li><a href="https://www.formula1.com/en/latest.html" target="_blank" rel="noopener">F1 News</a></li>
+        <li><a href="https://www.formula1.com/en/results.html" target="_blank" rel="noopener">Resultados</a></li>
+        <li><a href="https://www.formula1.com/" target="_blank" rel="noopener">formula1.com</a></li>
+      </ul>
+    </div>
+  </footer>
+
+<script src="./assets/scripts/app.js"></script>
+
+</body>
+</html>
