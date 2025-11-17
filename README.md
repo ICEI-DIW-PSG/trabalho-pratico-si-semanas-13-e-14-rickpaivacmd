@@ -9,10 +9,11 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Henrique Paiva Maciel Ferreira
+- Matricula: 897765
+- Proposta de projeto escolhida: Site de informações para fãs de F1
+- Breve descrição sobre seu projeto: O F1 Insights é um site voltado para fãs da Fórmula 1, com informações atualizadas sobre corridas, equipes, pilotos e análises técnicas da temporada. O objetivo é oferecer uma visão clara e envolvente do mundo da F1, reunindo notícias, curiosidades e destaques em um só lugar.
+
 
 **Print da tela com a implementação**
 
